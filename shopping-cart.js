@@ -1,13 +1,10 @@
-// logout
-
 document.getElementById('logout-button').addEventListener('click', () => {
     console.log("Logout button clicked");
-    
+    // e.preventDefault();
     window.location.href = 'index.html';
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-    
     localStorage.removeItem('email');
     localStorage.removeItem('password');
     console.log("Credentials removed");
